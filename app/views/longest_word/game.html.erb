@@ -1,0 +1,17 @@
+<center>
+  <h1>LongestWord#game</h1>
+  <form action="/game" method="get">
+    <input type="hidden" name="grid_size" value = "10">
+    <input type="submit" value="Start game">
+  </form>
+   <p><%= @grid.join(" ") %></p>
+  <form action="/score" method="get">
+      <input type="text" name="answer" placeholder="What is your try?">
+      <input type="hidden" name="start" value = <%= Time.now.to_i %> >
+      <input type="hidden" name="grid" value = <%= @grid.join(",") %> >
+      <input type="submit">
+    </form>
+</center>
+
+
+
