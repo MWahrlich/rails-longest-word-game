@@ -5,5 +5,10 @@
 <p>Your score: <%= @result[:score] %> points</p>
 <p>Your time: <%= @result[:time] %> seconds</p>
 
+<p>You have played <%= @times_played %>  games </p>
+<p>You have overall <%= @total %>  points </p>
+<p>Your average score is <%= @average %>  points </p>
+
+
 <%= link_to "Another round", game_path %>
 <center>
